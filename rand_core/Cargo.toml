@@ -25,6 +25,7 @@ all-features = true
 
 [features]
 std = ["alloc", "getrandom", "getrandom/std"]    # use std library; should be default but for above bug
+js = ["getrandom/js"]
 alloc = []  # enables Vec and Box support without std
 serde1 = ["serde"] # enables serde for BlockRng wrapper
 
